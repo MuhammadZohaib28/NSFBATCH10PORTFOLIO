@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: rgb(234, 234, 234);
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.6rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(33, 208, 33, 0.577);
+    font-weight: 600;
+}
