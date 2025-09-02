@@ -1,0 +1,39 @@
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4rem;
+
+  gap: 5rem;
+}
+
+.aboutme-picture {
+  height: 20rem;
+}
+
+.aboutme-picture img {
+  height: 100%;
+}
+
+.text-div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width:60%;
+}
+
+.text-div h1 {
+  font-size: 3rem;
+}
+
+.text-div h2 {
+  font-size: 2rem;
+}
+
+
+.text-div p {
+    font-size: 1.3rem;
+}

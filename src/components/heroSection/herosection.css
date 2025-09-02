@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 1rem);
 }
 
 .herosection-image {
@@ -51,8 +51,8 @@
   font-size: 1.3rem;
 }
 
-.mouse{
-    margin-top: 5rem;
+.mouse {
+  margin-top: 5rem;
 }
 
 .mouse-icon {
@@ -62,7 +62,8 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

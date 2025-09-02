@@ -1,0 +1,67 @@
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding: 2rem   ;
+gap: 4rem;
+    background-color: rgb(248, 248, 248);
+}
+
+
+.top-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: gainsboro;
+
+    padding: 3rem;
+
+    border-radius: 1rem;
+
+    gap: 1rem;
+}
+
+
+.features-tag{
+    border: 2px solid gray;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    background-color: rgb(235, 235, 235);
+}
+
+.top-features h1 {
+    font-size: 3rem;
+}
+
+.top-features p {
+    text-align: center;
+    width: 95%;
+    font-size: 1.3rem;
+}
+
+.animation{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.features-card{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    gap: 4rem;
+}
+
+
+.features-card div{
+    background-color: rgba(128, 128, 128, 0.246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+}

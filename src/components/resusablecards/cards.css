@@ -1,0 +1,62 @@
+/* Track */
+.skill-bar {
+  --track: #2b2f45;
+  --fill-grad: linear-gradient(
+    90deg,
+    #63b4ff,
+    #8cd6c9 35%,
+    #d7e07a 65%,
+    #ffcc3f
+  );
+  --cap: #2a2f3b;
+  position: relative;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #2a2e44, #202538);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.45) inset, 0 12px 22px rgba(20, 24, 38, 0.6);
+  overflow: hidden;
+}
+
+/* Fill */
+.skill-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--value, 70%);
+  background: var(--fill-grad);
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(140, 214, 201, 0.35),
+    0 0 1px 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+/* Small dark end cap like in screenshot */
+.skill-cap {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 8px;
+  background: var(--cap);
+  border-radius: 999px;
+  filter: brightness(0.9);
+}
+
+/* Position cap at the end of fill */
+.skill-bar {
+  /* move cap to end of current fill width using an extra wrapper trick */
+}
+.skill-bar .skill-cap {
+  left: calc(var(--value, 70%) - 7px); /* centers cap at fill end */
+  right: auto;
+}
+
+/* Level text under the bar */
+.skill-level {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #c9cfe3;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+}
