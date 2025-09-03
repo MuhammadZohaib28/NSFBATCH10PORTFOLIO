@@ -2,27 +2,24 @@ import React from "react";
 
 import "./cards.css";
 
-const Cards = ({ langname, langpercent, tag, lasttag }) => {
+const Cards = ({ name, level, bar, tag }) => {
   return (
     <div>
       <div>
-        <h3>{langname}</h3>
+        <h3>{name}</h3>
 
-        <span>{langpercent}</span>
+        <span>{level}</span>
       </div>
 
       <div>
-        <span>{tag}</span>
+        <span>{bar}</span>
 
-        <div
-          className="skill-bar"
-         
-        >
+        <div className="skill-bar">
           <span className="skill-fill"></span>
           <span className="skill-cap"></span>
         </div>
 
-        <span>{lasttag}</span>
+        <span>{tag}</span>
       </div>
     </div>
   );
