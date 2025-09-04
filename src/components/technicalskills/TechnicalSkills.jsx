@@ -45,6 +45,7 @@ const TechnicalSkills = () => {
     Cooking: [
       {
         name: "Biryani",
+        tag: "Expert"
       },
     ],
   };
