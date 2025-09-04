@@ -10,25 +10,25 @@ const TechnicalSkills = () => {
       {
         name: "HTML5",
         level: "85",
-        bar: 86,
+        bar: "86%",
         tag: "Beginner",
       },
       {
         name: "CSS3",
         level: "65",
-        bar: 45,
+        bar: "45%",
         tag: "Intermediate",
       },
       {
         name: "JS",
         level: "67",
-        bar: 98,
+        bar: "98%",
         tag: "Beginner",
       },
       {
         name: "ReactJS",
         level: "32",
-        bar: 76,
+        bar: "76%",
         tag: "Beginner",
       },
     ],
@@ -37,7 +37,7 @@ const TechnicalSkills = () => {
       {
         name: "Figma",
         level: "78",
-        bar: 35,
+        bar: "35%",
         tag: "Expert",
       },
     ],
@@ -45,7 +45,9 @@ const TechnicalSkills = () => {
     Cooking: [
       {
         name: "Biryani",
-        tag: "Expert"
+        level: "67",
+        bar: "78%",
+        tag: "Expert",
       },
     ],
   };
@@ -65,10 +67,10 @@ const TechnicalSkills = () => {
     <div>
       <h1>Technical Skills</h1>
 
-      <div>
+      <div className="buttons-container">
         {categories.map((btn, index) => (
           <button
-            className="active"
+            className={btn === activetab ? "active" : "" }
             key={index}
             onClick={() => setActivetab(btn)}
           >
@@ -77,7 +79,7 @@ const TechnicalSkills = () => {
         ))}
       </div>
 
-      <div>
+      <div className="card-container">
         {displayedSkills.map((skills) => (
           <Cards
             name={skills.name}

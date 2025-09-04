@@ -1,0 +1,34 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.buttons-container button {
+    outline: none;
+    border: none;
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.5rem;
+
+    margin-bottom: 2rem;
+    background-color: gray;
+    
+}
+
+
+.buttons-container button.active{
+    background-color: red;
+}
