@@ -9,6 +9,8 @@ const HeroSection = () => {
       <div className="herosection-image">
         <img src={myimage} alt="My picture" />
       </div>
+
+      <h1 className="herosection-heading">Muhammad Zohaib</h1>
       <h1 className="herosection-heading">Frontend ReactJS Developer</h1>
 
       <span className="herosection-span">
@@ -26,7 +28,7 @@ const HeroSection = () => {
       </div>
 
       <h1 className="mouse">
-        <CiDesktopMouse2 className="mouse-icon"/>
+        <CiDesktopMouse2 className="mouse-icon" />
       </h1>
     </div>
   );
